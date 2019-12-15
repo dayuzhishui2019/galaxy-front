@@ -1,0 +1,94 @@
+.xui-tabs.xui-tabs-style {
+	background: @color-background-white;
+	padding: 0 20px;
+	border: 0;
+	box-shadow: 0px 0px 8px @color-background-shadow;
+	border-collapse: separate !important;
+
+	.xui-tab-item {
+		height: 45px;
+		line-height: 45px;
+
+		&:hover {
+			color: @color-primary;
+		}
+
+		&.is-active {
+			color: @color-primary;
+			border-color: @color-primary;
+			background: #fff;
+		}
+
+		&:not(:last-child) {
+			&:after {
+				content: "";
+				position: absolute;
+				right: -0.5px;
+				top: 50%;
+				width: 1px;
+				height: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+
+	&.dag-orgtype {
+		.xui-tab-item {
+			width: 50%;
+		}
+	}
+
+	&.manner-card {
+		.xui-tab-item {
+			border-left: 1px solid transparent;
+			border-right: 1px solid transparent;
+			border-top: 2px solid transparent;
+			border-color: #fff;
+
+			&.is-active {
+				border-top-color: @color-primary;
+				border-left: 1px solid @color-border;
+				border-right: 1px solid @color-border;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&.succinct-card {
+		.xui-tab-item {
+			border: 2px solid transparent;
+			border-color: #fff;
+
+			&.is-active {
+				border-bottom-color: @color-primary;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+
+	&.manner-button {
+		padding: 0px;
+		box-shadow: none;
+		.xui-tab-item {
+			height: 35px;
+			line-height: 35px;
+			background: @color-background;
+			color: @color-subcolor;
+
+			&.is-active {
+				background: @color-primary;
+				color: #fff;
+			}
+
+			&:after {
+				display: none;
+			}
+		}
+	}
+}

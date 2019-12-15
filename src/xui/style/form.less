@@ -1,0 +1,66 @@
+.xui-form.xui-form-style {
+	.xui-form-field {
+		margin-top: 8px;
+		// .xui-field-widget-component.dirty:not(.invalid) {
+		// 	position: relative;
+		// 	&:before {
+		// 		content: "\E6FE";
+		// 		font-family: "xuiiconfont" !important;
+		// 		font-size: 20px;
+		// 		font-style: normal;
+		// 		-webkit-font-smoothing: antialiased;
+		// 		-moz-osx-font-smoothing: grayscale;
+		// 		position: absolute;
+		// 		z-index: 10;
+		// 		right: 4px;
+		// 		color: @color-success;
+		// 		top: 50%;
+		// 		transform: translateY(-50%);
+		// 	}
+		// }
+		.xui-field-widget-component.invalid.dirty {
+			position: relative;
+			border-color: @color-danger;
+			// &:before {
+			// 	content: "\E6FE";
+			// 	font-family: "xuiiconfont" !important;
+			// 	font-size: 20px;
+			// 	font-style: normal;
+			// 	-webkit-font-smoothing: antialiased;
+			// 	-moz-osx-font-smoothing: grayscale;
+			// 	position: absolute;
+			// 	z-index: 10;
+			// 	right: 0;
+			// 	color: @color-danger;
+			// 	top: 50%;
+			// 	transform: translate(120%, -50%);
+			// }
+			&:after {
+				content: attr(validate-msg);
+				position: absolute;
+				left: 0px;
+				color: @color-danger;
+				font-size: 12px;
+				white-space: nowrap;
+				top: 100%;
+				transform: translate(0px, -4px);
+				line-height: 26px;
+			}
+			.xui-select-inputwrap {
+				border-color: @color-danger;
+			}
+		}
+		.xui-field-label {
+			font-size: 14px;
+			padding-right: 5px;
+			min-width: 120px;
+			&:before {
+				margin-left: -13px;
+				margin-top: 3px;
+			}
+			&:after {
+				content: "：";
+			}
+		}
+	}
+}

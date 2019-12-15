@@ -1,0 +1,133 @@
+.xui-btn.xui-btn-style {
+	border-radius: 2px;
+	margin: 0px;
+
+	&>* {
+		display: inline-block;
+	}
+
+	&.xui-btn-small {
+		height: 30px;
+		line-height: 25px;
+	}
+
+	&.xui-btn-default,
+	&.xui-btn- {
+		color: #495060;
+		border-color: #bfc2ca;
+		background: #FFF;
+
+		&:hover {
+			color: @color-primary;
+			border-color: @color-primary;
+		}
+
+		&:active {
+			color: @color-primary-active;
+			border-color: @color-primary-active;
+		}
+
+		&.disabled {
+			background: transparent !important;
+			border-color: @color-disabled  !important;
+			color: @color-placeholder  !important;
+		}
+	}
+
+	&.xui-btn-primary {
+		background: @color-primary;
+		border-color: @color-primary;
+
+		&:hover {
+			background: @color-primary-hover;
+			border-color: @color-primary;
+		}
+
+		&:active {
+			background: @color-primary-active;
+			border-color: @color-primary;
+		}
+
+		&.disabled {
+			background: @color-disabled  !important;
+			border-color: transparent !important;
+			color: @color-content  !important;
+		}
+	}
+
+	&.xui-btn-success {
+		background: @color-success;
+		border-color: @color-success;
+
+		&:hover {
+			background: @color-success-hover;
+			border-color: transparent;
+		}
+
+		&:active {
+			background: @color-success-active;
+			border-color: transparent;
+		}
+	}
+
+	&.xui-btn-normal {
+		background: fade(@color-primary, 10%);
+		border-color: @color-primary;
+		color: @color-primary ;
+
+		&:hover {
+			background: fade(@color-normal-hover, 10%);
+			border-color: @color-normal-hover;
+			color: @color-normal-hover ;
+		}
+
+		&:active {
+			background: fade(@color-normal-active, 10%);
+			border-color: @color-normal-active;
+			color: @color-normal-active ;
+		}
+	}
+
+	&.xui-btn-warning,
+	&.xui-btn-warn {
+		background: @color-warning;
+		border-color: @color-warning;
+		color: @color-white;
+
+		&:hover {
+			background: @color-warning-hover;
+			border-color: transparent;
+		}
+
+		&:active {
+			background: @color-warning-active;
+			border-color: transparent;
+		}
+	}
+
+	&.xui-btn-danger,
+	&.xui-btn-error {
+		background: @color-danger;
+		border-color: @color-danger;
+		color: @color-white;
+
+		&:hover {
+			background: @color-danger-hover;
+			border-color: transparent;
+		}
+
+		&:active {
+			background: @color-danger-active;
+			border-color: transparent;
+		}
+	}
+
+	&.xui-btn-text {
+		color: @color-subcolor;
+		border: none;
+
+		&:hover {
+			color: @color-content;
+		}
+	}
+}

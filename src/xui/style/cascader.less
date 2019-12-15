@@ -1,0 +1,63 @@
+.xui-cascader.xui-cascader-style {
+	width: @width-normal;
+	vertical-align: middle;
+	color: @color-content;
+
+	.xui-cascader-inputwrap {
+		height: @height-normal;
+		background: #fff;
+		border: 1px solid fade(@color-border, 50%);
+		font-size: 14px;
+		border-radius: 2px;
+		padding: 0px 25px 0px 10px;
+		line-height: @height-normal - 2px;
+
+		&:hover,
+		&:focus-within {
+			border-color: @color-primary;
+		}
+	}
+
+	.xui-cascader-placeholder {
+		color: @color-placeholder;
+		height: @height-normal - 2px;
+	}
+
+	.select-trigger-icon {
+		font-size: 12px;
+		right: 10px;
+		color: @color-subcolor;
+	}
+}
+
+.xui-picker.xui-picker-style.xui-cascader-picker {
+	border-radius: 2px;
+
+	.xui-cascader-option {
+		height: @height-normal - 2px;
+		line-height: @height-normal - 2px;
+		padding: 0px 15px;
+		font-size: 14px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+
+		.xui-cascader-enter {
+			color: @color-subcolor;
+		}
+
+		&.active {
+			background: @color-background;
+			font-weight: bold;
+			color: @color-primary;
+		}
+
+		&:hover {
+			background: @color-primary-light;
+		}
+	}
+
+	.scroll-bar-slider {
+		background-color: @color-primary-light;
+	}
+}

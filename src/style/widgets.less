@@ -1,0 +1,38 @@
+// loading
+
+@keyframes toggleRotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+@-webkit-keyframes toggleRotate {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+.dag-circle-loading {
+	vertical-align: middle;
+	&:after {
+		content: "";
+		border-radius: 50%;
+		width: 10px;
+		height: 10px;
+		float: left;
+		font-size: 10px;
+		position: relative;
+		text-indent: -9999em;
+		border-top: 2px solid rgba(#fff, 0.2);
+		border-right: 2px solid fade(#fff, 20%);
+		border-bottom: 2px solid fade(#fff, 20%);
+		border-left: 2px solid currentColor;
+		-webkit-animation: toggleRotate 1.1s infinite linear;
+		animation: toggleRotate 1.1s infinite linear;
+	}
+}

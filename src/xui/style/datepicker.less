@@ -1,0 +1,51 @@
+.xui-datepicker.xui-datepicker-style {
+	height: @height-normal;
+
+	.date-input {
+		background: #fff;
+		border: 1px solid fade(@color-border, 50%);
+		border-radius: 2px;
+		width: @width-normal;
+		height: @height-normal;
+		box-sizing: border-box;
+		position: relative;
+		color: @color-border;
+
+		&:hover,
+		&.inputactive {
+			border-color: @color-primary;
+
+			.date_icon:after {
+				color: @color-primary;
+			}
+		}
+
+		.time-input {
+			font-size: 14px;
+			color: @color-content;
+			height: @height-normal - 2px;
+			line-height: @height-normal - 2px;
+		}
+
+		.date_icon {
+			background-image: none;
+
+			&:after {
+				position: absolute;
+				content: "\E6DE";
+				font-family: "xuiiconfont" !important;
+				color: @color-subcolor;
+				font-size: 24px;
+				right: 3px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+		}
+	}
+}
+
+.calendarPanel {
+	.date-normal-checked {
+		background-color: @color-primary;
+	}
+}

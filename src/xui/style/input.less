@@ -1,0 +1,62 @@
+.xui-input.xui-input-style {
+	background: #fff;
+	border: 1px solid fade(@color-border, 50%);
+	border-radius: 2px;
+	width: @width-normal;
+	height: @height-normal;
+
+	&.clearable {
+		.xui-input-inner {
+			padding: 0px 25px 0px 10px;
+		}
+	}
+
+	.xui-input-append {
+		border: 0;
+	}
+
+	.xui-input-inner {
+		height: @height-normal - 2px;
+		font-size: @text-normal;
+		padding: 0px 10px;
+		color: @color-content;
+
+		&::-webkit-input-placeholder {
+			color: @color-placeholder;
+		}
+	}
+
+	&:hover,
+	&:focus-within {
+		border-color: @color-primary;
+
+
+	}
+
+	&:hover,
+	&:focus-within .xui-input-wrap>div:after {
+		color: @color-primary;
+	}
+
+	//查询
+	&.common-input-search,
+	&.xui-input-manner-search {
+		// width: 220px;
+
+		.xui-input-wrap>div:after {
+			content: "\E77A";
+			font-family: "xuiiconfont" !important;
+			position: absolute;
+			color: @color-subcolor;
+			font-size: 16px;
+			right: 7px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+
+		.input-clear-icon {
+			z-index: 1;
+			background: #fff;
+		}
+	}
+}

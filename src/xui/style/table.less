@@ -1,0 +1,98 @@
+.xui-datatable.xui-datatable-style {
+	.xui-datatable-table {
+		border: 1px solid #dcdee2;
+	}
+
+	tr {
+
+		th,
+		td {
+			border: none;
+		}
+	}
+
+	thead>tr {
+		height: 38px;
+		font-weight: 900;
+		line-height: 40px;
+		background: #f8f8f9;
+		border-top: 1px solid fade(@color-subcolor, 30%);
+
+		th {
+			color: @color-hearder;
+			padding: 0px;
+			text-align: center;
+		}
+	}
+
+	tbody>tr {
+		background: #fff;
+		height: 4px;
+		border-top:1px solid #e8eaec;
+		transition: background-color .2s ease-in-out;
+		&:hover{
+			background:#ebf7ff;
+		}
+		td {
+			height: 42px;
+			padding: 0;
+			margin: 0px;
+			color: @color-title;
+
+			&>div {
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				min-width: 20px;
+			}
+		}
+
+		&:nth-child(odd) {
+			background: #fff;
+
+			&:hover {
+				background:#ebf7ff;
+			}
+		}
+
+		&:nth-child(even) {
+			background: #fff;
+
+			&:hover {
+				background:#ebf7ff;
+			}
+		}
+
+		&:not(:last-child) {
+			border-bottom: 0px solid @color-background-major;
+		}
+	}
+
+	.xui-toolbar-style {
+		.xui-toolbar-item .xui-toolbar-icon {
+			font-size: 16px;
+			color: @color-primary;
+
+			&:hover {
+				color: @color-primary-hover;
+			}
+
+			&:active {
+				color: @color-primary-active;
+			}
+		}
+	}
+}
+
+
+
+// .dag-datatable-container {
+	.xui-datapage.xui-datapage-style {
+		.xui-datapage-footer {
+			position: absolute;
+			bottom: 15px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+// }

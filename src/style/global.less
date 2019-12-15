@@ -1,0 +1,148 @@
+html {
+	min-width: 1366px;
+}
+
+body {
+	font-size: 14px;
+	font-family: 微软雅黑;
+}
+
+
+textarea:disabled,
+input:disabled {
+	background-color: @color-background;
+}
+
+.absolute-box {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+// 字体
+.text-small {
+	font-size: 12px;
+}
+
+.text-normal {
+	font-size: 14px;
+}
+
+.text-big {
+	font-size: 16px;
+}
+
+.text-large {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.number {
+	font-family: Bahnschrift;
+}
+
+.number-mini {
+	font-family: Bahnschrift;
+	font-size: 14px;
+}
+
+.number-small {
+	font-family: Bahnschrift;
+	font-size: 16px;
+}
+
+.number-normal {
+	font-family: Bahnschrift;
+	font-size: 20px;
+}
+
+.number-big {
+	font-family: Bahnschrift;
+	font-size: 24px;
+}
+
+.number-large {
+	font-family: Bahnschrift;
+	font-size: 40px;
+}
+
+.xui-tabs .xui-tab-item.is-active {
+	background: #409eff;
+	color: #fff;
+}
+
+.toolbar_page {
+	line-height: 50px;
+	height: 50px;
+
+	.page_total {
+		float: right;
+		line-height: 50px;
+
+		.page_total_num {
+			color: @color-primary;
+		}
+	}
+}
+
+.toolbar.xui-toolbar {
+	float: left;
+	line-height: 50px;
+	height: 50px;
+}
+
+// 字色
+.color-title {
+	color: @color-title;
+}
+
+//正文
+.color-content {
+	color: @color-content;
+}
+
+//辅助/图标
+.color-subcolor {
+	color: @color-subcolor;
+}
+.color-primary {
+	color: @color-primary;
+}
+.color-danger {
+	color: @color-danger;
+}
+.color-warning {
+	color: @color-warning;
+}
+.color-success {
+	color: @color-success;
+}
+
+// 面板
+.panel {
+	background: @color-background-white;
+	border: 1px solid @color-border;
+}
+
+/*定义滚动条高宽及背景 高宽分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+	background-color: #f5f5f5;
+}
+
+/*定义滚动条轨道 内阴影+圆角*/
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	background-color: #fff;
+}
+
+/*定义滑块 内阴影+圆角*/
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #eaedf1;
+}
