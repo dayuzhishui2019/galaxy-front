@@ -110,7 +110,13 @@ export default {
                 var types = ["face", "body", "vehicle", "nomotor"];
                 var lines = {};
                 Object.keys(res).forEach(category => {
-                    var map = res[category].m || {};
+                    var dts = res[category];
+                    var time = new Date(dts.time),
+                        now = new Date();
+                    if(time.getDate()!=now.getDate()||time.getMonth()!=now.getMonth()||time.getFullYear()!=now.getFullYear()){
+                        return;
+                    }
+                    var map = dts.m || {};
                     if (category == "access") {
                         //接入
                         types.forEach(k => {
